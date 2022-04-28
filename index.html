@@ -1,9 +1,19 @@
 <html>
-  
+<script>
+function login() {
+    let password = document.getElementById('passwd').value;
+    alert(password);
+
+}
+</script>
+
 <body>
   <center>
-    <h1>Dies ist eine private Website.</h1>
-    <input id="passwd" type="password" placeholder="Passwort eingeben" required>
+    <h1>Diese Website ist privat.</h1>
+    <br><br>
+    <form onsubmit="login(); return false;">
+      <input id="passwd" type="password" placeholder="Passwort eingeben" required>
+      <button>Login</button>
   </center>
 </body>
 
