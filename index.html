@@ -1,8 +1,10 @@
 <html>
+<script src="libs/sha256.js"></script>
 <script>
 function login() {
     let password = document.getElementById('passwd').value;
-    alert(password);
+    let encryptedpassword = sha256(password);
+    alert(encryptedpassword);
 
 }
 </script>
