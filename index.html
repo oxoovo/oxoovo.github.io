@@ -5,7 +5,7 @@ function login() {
     let password = document.getElementById('passwd').value;
     let encryptedpassword = sha256(password);
     alert(encryptedpassword);
-    document.getElementById('line').innerHTML(encryptedpassword);
+    document.getElementById('line').innerHTML = encryptedpassword;
 
 }
 </script>
