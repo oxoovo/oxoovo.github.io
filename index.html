@@ -6,7 +6,8 @@ function login() {
     let encryptedpassword = sha256(password);
     if (encryptedpassword == '4addf5082f6f54d0e06a341a5f41e9a6408c73b6f9c53f74564b772eeead480a') {
         alert("Herzlich Wilkommen!");
-    }
+    } else {
+        alert("Falsch!");
     document.getElementById('line').innerHTML = encryptedpassword;
 
 }
